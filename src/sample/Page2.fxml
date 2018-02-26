@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #b7b2b2;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerPage2">
+   <children>
+      <Label layoutX="360.0" layoutY="244.0" prefHeight="17.0" prefWidth="92.0" text="Drugs">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="687.0" layoutY="616.0" mnemonicParsing="false" onAction="#Print" prefHeight="27.0" prefWidth="109.0" text="Print" />
+      <Label layoutX="164.0" layoutY="27.0" prefHeight="43.0" prefWidth="157.0" text="Patient :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <SplitPane layoutX="30.0" layoutY="100.0" prefHeight="354.0" prefWidth="253.0">
+         <items>
+            <GridPane alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="353.0" prefWidth="274.0" style="-fx-background-color: #b7b2b2;" vgap="25.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="134.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="117.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text=" First Name :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label graphicTextGap="5.0" lineSpacing="5.0" text=" Last Name :" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="133.0" text=" Place Of Birth :" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text=" Age :" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text=" Sex :" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text=" Nationality :" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblPrenom" prefHeight="17.0" prefWidth="109.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="lblPlaceBirth" prefHeight="17.0" prefWidth="113.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="monAge" prefHeight="17.0" prefWidth="114.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="lblSex" prefHeight="17.0" prefWidth="116.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="lblNationality" prefHeight="17.0" prefWidth="113.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="lblName" prefHeight="17.0" prefWidth="103.0" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </items>
+      </SplitPane>
+      <Label fx:id="lblName1" layoutX="311.0" layoutY="30.0" prefHeight="37.0" prefWidth="241.0" text="Label">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></Label>
+      <Separator layoutX="14.0" layoutY="72.0" opacity="0.56" prefHeight="0.0" prefWidth="967.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Separator>
+      <Label layoutX="360.0" layoutY="100.0" prefHeight="17.0" prefWidth="131.0" text="Illness">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Illness" layoutX="426.0" layoutY="139.0" prefHeight="43.0" prefWidth="318.0" />
+      <Label layoutX="360.0" layoutY="400.0" prefHeight="21.0" prefWidth="55.0" text="Days">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="556.0" text="Digital signature">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="390.0" layoutY="603.0" />
+      <Label fx:id="lblPrenom1" layoutX="560.0" layoutY="30.0" prefHeight="37.0" prefWidth="220.0" text="Label">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></Label>
+      <TextArea fx:id="Drugs" layoutX="426.0" layoutY="255.0" prefHeight="113.0" prefWidth="318.0" />
+      <Button layoutX="837.0" layoutY="13.0" mnemonicParsing="false" onAction="#stop1" text="X" />
+      <Label fx:id="message" layoutX="365.0" layoutY="656.0" prefHeight="17.0" prefWidth="275.0" />
+      <Label layoutX="426.0" layoutY="402.0" />
+      <TextField fx:id="Days" layoutX="423.0" layoutY="397.0" prefHeight="27.0" prefWidth="55.0" />
+   </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
